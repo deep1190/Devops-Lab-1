@@ -101,7 +101,3 @@ curl http://localhost:5000/health
 
 ---
 
-## 📝 Lab Author
-- **Course:** DevOps Foundations & Continuous Integration (Lab 1)
-- **Status:** Complete & Fully Verified
-
