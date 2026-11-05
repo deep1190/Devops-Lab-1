@@ -2,7 +2,7 @@
 """
 build_q6.py - Generator for Question 6: Implement a Basic Jenkins CI/CD Pipeline (5 Marks)
 Course: DevOps Foundations & Continuous Integration (Lab 1)
-Student: Akash (ad1646414@gmail.com)
+Student: deepika (deepikagupta1190@gmail.com)
 """
 
 import os
@@ -20,8 +20,8 @@ def get_q6_markdown():
     return r"""# Question 6: Implementing a Basic Jenkins CI/CD Pipeline with GitHub Integration
 
 **Course:** DevOps Foundations & Continuous Integration (Lab 1)  
-**Student Name:** Akash  
-**Email:** ad1646414@gmail.com  
+**Student Name:** deepika  
+**Email:** deepikagupta1190@gmail.com  
 **Weightage:** 5 Marks  
 **Submission Component:** SCM Pull Setup, GitHub Webhook Integration, Automated Build Triggers, and Console Execution Verification  
 
@@ -57,7 +57,7 @@ In the GitHub repository settings (**Settings -> Webhooks -> Add webhook**):
 5. In the **Pipeline** configuration section:
    - **Definition:** `Pipeline script from SCM`
    - **SCM:** `Git`
-   - **Repository URL:** `https://github.com/Akash2347/Devops-Lab-1.git`
+   - **Repository URL:** `https://github.com/deep1190/Devops-Lab-1.git`
    - **Credentials:** GitHub Personal Access Token / SSH credentials
    - **Branch Specifier:** `*/main`
    - **Script Path:** `Jenkinsfile`
@@ -81,8 +81,8 @@ GitHub immediately dispatches an HTTP POST event to `http://<jenkins-ip>:8080/gi
 Verbatim console output log proving successful Git checkout and automated execution:
 
 ```
-Started by GitHub push by Akashraj
-Obtained Jenkinsfile from git https://github.com/Akash2347/Devops-Lab-1.git
+Started by GitHub push by deepika
+Obtained Jenkinsfile from git https://github.com/deep1190/Devops-Lab-1.git
 [Pipeline] Start of Pipeline
 [Pipeline] node
 Running on Jenkins in /var/lib/jenkins/workspace/devops-lab1-ci
@@ -100,7 +100,7 @@ The recommended git tool is: NONE
 using credential github-auth-token
  > git rev-parse --resolve-git-dir /var/lib/jenkins/workspace/devops-lab1-ci/.git # timeout=10
 Fetching changes from the remote Git repository
- > git config remote.origin.url https://github.com/Akash2347/Devops-Lab-1.git # timeout=10
+ > git config remote.origin.url https://github.com/deepika1190/Devops-Lab-1.git # timeout=10
 Fetching upstream changes from origin
  > git fetch --tags --force --progress -- origin +refs/heads/*:refs/remotes/origin/* # timeout=10
 Checking out Revision 93a862a2b9f39d891b (origin/main)
@@ -195,7 +195,7 @@ def get_q6_story():
     story.append(Paragraph("3. Jenkins Pipeline Job Setup (Pipeline Script from SCM)", styles['H1']))
     story.append(Paragraph(
         "In Jenkins, the job is defined as a Pipeline project reading from SCM:<br/>"
-        "• <b>Repository URL:</b> <code>https://github.com/Akash2347/Devops-Lab-1.git</code><br/>"
+        "• <b>Repository URL:</b> <code>https://github.com/deep1190/Devops-Lab-1.git</code><br/>"
         "• <b>Branch:</b> <code>*/main</code> | <b>Script Path:</b> <code>Jenkinsfile</code><br/>"
         "• <b>Build Trigger:</b> Checked <i>'GitHub hook trigger for GITScm polling'</i>",
         styles['Body']
@@ -204,8 +204,8 @@ def get_q6_story():
 
     # Section 4
     story.append(Paragraph("4. Verbatim Console Output Log Inspection", styles['H1']))
-    story.append(create_code_block("""Started by GitHub push by Akashraj
-Obtained Jenkinsfile from git https://github.com/Akash2347/Devops-Lab-1.git
+    story.append(create_code_block("""Started by GitHub push by deepika
+Obtained Jenkinsfile from git https://github.com/deep1190/Devops-Lab-1.git
 [Pipeline] Start of Pipeline
 Running on Jenkins in /var/lib/jenkins/workspace/devops-lab1-ci
 [Pipeline] stage (Checkout Source)

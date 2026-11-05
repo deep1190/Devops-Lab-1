@@ -2,7 +2,7 @@
 """
 DevOps Lab 1: DevOps Foundations & Continuous Integration
 Report & Submission Generator
-Author: Akash (ad1646414@gmail.com)
+Author: deepika (deepikagupta1190@gmail.com)
 """
 
 import os
@@ -54,7 +54,7 @@ class NumberedCanvas(canvas.Canvas):
         self.line(36, 36, 576, 36)
         self.setFont('Helvetica', 8)
         self.setFillColor(colors.HexColor('#64748b'))
-        self.drawString(36, 24, 'Student: Akash | ad1646414@gmail.com')
+        self.drawString(36, 24, 'Student: Deepika | deepikagupta1190@gmail.com')
         self.drawRightString(576, 24, f'Page {self._pageNumber} of {page_count}')
         self.restoreState()
 
@@ -227,12 +227,12 @@ def create_metadata_banner(question_num, title, marks, styles, width=540):
         [
             Paragraph(f"<b>Course Lab:</b> DevOps Lab 1 (CI/CD)", styles['MetaBox']),
             Paragraph(f"<b>Assessment:</b> Question {question_num} ({marks} Marks)", styles['MetaBox']),
-            Paragraph(f"<b>Student:</b> Akash", styles['MetaBox'])
+            Paragraph(f"<b>Student:</b> deepika", styles['MetaBox'])
         ],
         [
             Paragraph(f"<b>Topic:</b> {title}", styles['MetaBox']),
             Paragraph(f"<b>Status:</b> Completed & Verified", styles['MetaBox']),
-            Paragraph(f"<b>Email:</b> ad1646414@gmail.com", styles['MetaBox'])
+            Paragraph(f"<b>Email:</b> deepikagupta1190@gmail.com", styles['MetaBox'])
         ]
     ]
     t = Table(data, colWidths=[180, 180, 180])

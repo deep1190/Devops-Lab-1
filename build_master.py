@@ -3,7 +3,7 @@
 build_master.py - Master Lab Report & Submission Bundle Packager
 Course: DevOps Foundations & Continuous Integration (Lab 1)
 Total Weightage: 40 Marks (7 Questions)
-Student: Akash (ad1646414@gmail.com)
+Student: Deepika Gupta (deepikagupta1190@gmail.com)
 """
 
 import os
@@ -41,12 +41,12 @@ def generate_master_markdown():
     master_md = f"""# Master Lab Assessment Report
 ## Lab 1: DevOps Foundations & Continuous Integration
 
-**Student Name:** Akash  
-**Email:** ad1646414@gmail.com  
+**Student Name:** Deepika Gupta  
+**Email:** deepikagupta1190@gmail.com  
 **Course:** DevOps Foundations & Continuous Integration  
 **Total Marks:** 40 Marks (7 Assessment Questions)  
 **Submission Date:** {datetime.now().strftime("%B %d, %Y")}  
-**Repository URL:** https://github.com/Akash2347/Devops-Lab-1  
+**Repository URL:** https://github.com/deep1190/Devops-Lab-1  
 
 ---
 

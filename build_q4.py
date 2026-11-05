@@ -2,7 +2,7 @@
 """
 build_q4.py - Generator for Question 4: Install and Configure Git and Jenkins (5 Marks)
 Course: DevOps Foundations & Continuous Integration (Lab 1)
-Student: Akash (ad1646414@gmail.com)
+Student: Deepika Gupta (deepikagupta1190@gmail.com)
 """
 
 import os
@@ -20,8 +20,8 @@ def get_q4_markdown():
     return r"""# Question 4: Install and Configure Git and Jenkins on Ubuntu Linux
 
 **Course:** DevOps Foundations & Continuous Integration (Lab 1)  
-**Student Name:** Akash  
-**Email:** ad1646414@gmail.com  
+**Student Name:** Deepika Gupta  
+**Email:** deepikagupta1190@gmail.com  
 **Weightage:** 5 Marks  
 **Submission Component:** Installation Steps, Verification Commands, Global Configuration, and System Administration  
 
@@ -61,10 +61,10 @@ which git
 Set user identity across all repositories on the workstation:
 ```bash
 # Set user display name
-git config --global user.name "Akash"
+git config --global user.name "deepika"
 
 # Set user email address
-git config --global user.email "ad1646414@gmail.com"
+git config --global user.email "deepikagupta1190@gmail.com"
 
 # Set standard initial branch name to main
 git config --global init.defaultBranch main
@@ -81,8 +81,8 @@ Inspect active settings stored in `~/.gitconfig`:
 ```bash
 git config --list --show-origin
 # Output:
-# file:/home/ubuntu/.gitconfig   user.name=Akash
-# file:/home/ubuntu/.gitconfig   user.email=ad1646414@gmail.com
+# file:/home/ubuntu/.gitconfig   user.name=deepika
+# file:/home/ubuntu/.gitconfig   user.email=deepikagupta1190@gmail.com
 # file:/home/ubuntu/.gitconfig   init.defaultbranch=main
 # file:/home/ubuntu/.gitconfig   core.editor=nano
 # file:/home/ubuntu/.gitconfig   core.autocrlf=input
@@ -146,7 +146,7 @@ sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 1. Open browser to `http://<server-ip>:8080`.
 2. Paste the initial admin password.
 3. Select **"Install suggested plugins"** (Git, Pipeline, GitHub, Credentials).
-4. Create primary Administrator user profile (`Akashraj`).
+4. Create primary Administrator user profile (`deepika`).
 5. Confirm Jenkins Root URL (`http://<server-ip>:8080`).
 
 ---
@@ -155,8 +155,8 @@ sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 | Component | Verification Command | Expected Status |
 |---|---|---|
 | **Git Binary** | `git --version` | `git version 2.x` |
-| **Git User Name** | `git config --global user.name` | `Akash` |
-| **Git User Email** | `git config --global user.email` | `ad1646414@gmail.com` |
+| **Git User Name** | `git config --global user.name` | `deepika` |
+| **Git User Email** | `git config --global user.email` | `deepikagupta1190@gmail.com` |
 | **Java JDK** | `java -version` | `openjdk version "17.x"` |
 | **Jenkins Service** | `sudo systemctl is-active jenkins` | `active` |
 | **Port 8080 Binding**| `ss -tulpn \| grep 8080` | `LISTEN` on `:::8080` |
@@ -193,8 +193,8 @@ git --version
 
     story.append(Paragraph("<b>Step 2: Configure Global Git User Identity</b>", styles['H2']))
     story.append(create_code_block("""# Set user identity across all repositories on this machine
-git config --global user.name "Akash"
-git config --global user.email "ad1646414@gmail.com"
+git config --global user.name "deepika"
+git config --global user.email "deepikagupta1190@gmail.com"
 git config --global init.defaultBranch main
 git config --global core.editor nano
 git config --list --show-origin""", styles))
@@ -231,7 +231,7 @@ sudo cat /var/lib/jenkins/secrets/initialAdminPassword
     audit_data = [
         [Paragraph("<b>Component</b>", styles['TableHeader']), Paragraph("<b>Audit Command</b>", styles['TableHeader']), Paragraph("<b>Expected Output</b>", styles['TableHeader']), Paragraph("<b>Status</b>", styles['TableHeader'])],
         [Paragraph("Git Binary", styles['TableCellBold']), Paragraph("<code>git --version</code>", styles['TableCell']), Paragraph("Git version 2.x present", styles['TableCell']), Paragraph("VERIFIED", styles['TableCellBold'])],
-        [Paragraph("Git User Name", styles['TableCellBold']), Paragraph("<code>git config user.name</code>", styles['TableCell']), Paragraph("Akash", styles['TableCell']), Paragraph("VERIFIED", styles['TableCellBold'])],
+        [Paragraph("Git User Name", styles['TableCellBold']), Paragraph("<code>git config user.name</code>", styles['TableCell']), Paragraph("deepika", styles['TableCell']), Paragraph("VERIFIED", styles['TableCellBold'])],
         [Paragraph("Git User Email", styles['TableCellBold']), Paragraph("<code>git config user.email</code>", styles['TableCell']), Paragraph("ad1646414@gmail.com", styles['TableCell']), Paragraph("VERIFIED", styles['TableCellBold'])],
         [Paragraph("Java Runtime", styles['TableCellBold']), Paragraph("<code>java -version</code>", styles['TableCell']), Paragraph("OpenJDK 17 LTS", styles['TableCell']), Paragraph("VERIFIED", styles['TableCellBold'])],
         [Paragraph("Jenkins Daemon", styles['TableCellBold']), Paragraph("<code>systemctl is-active jenkins</code>", styles['TableCell']), Paragraph("active (running)", styles['TableCell']), Paragraph("VERIFIED", styles['TableCellBold'])],

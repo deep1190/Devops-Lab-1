@@ -2,7 +2,7 @@
 """
 build_q5.py - Generator for Question 5: Set Up Version Control Using Git (5 Marks)
 Course: DevOps Foundations & Continuous Integration (Lab 1)
-Student: Akash (ad1646414@gmail.com)
+Student: Deepika Gupta (deepikagupta1190@gmail.com)
 """
 
 import os
@@ -20,8 +20,8 @@ def get_q5_markdown():
     return r"""# Question 5: Version Control Setup, Branching, Merging & GitHub Integration
 
 **Course:** DevOps Foundations & Continuous Integration (Lab 1)  
-**Student Name:** Akash  
-**Email:** ad1646414@gmail.com  
+**Student Name:** Deepika Gupta  
+**Email:** deepikagupta1190@gmail.com  
 **Weightage:** 5 Marks  
 **Submission Component:** Git Repository Initialization, Staging, Commit History, Branching, Non-Fast-Forward Merge, and Remote GitHub Push  
 
@@ -105,7 +105,7 @@ git merge --no-ff feature/enhance-ui-metrics -m "merge: Merge branch 'feature/en
 ### Step 6: GitHub Remote Configuration & Push
 ```bash
 # Add GitHub remote origin
-git remote add origin https://github.com/Akash2347/Devops-Lab-1.git
+git remote add origin https://github.com/deep1190/Devops-Lab-1.git
 
 # Push main branch with upstream tracking
 git push -u origin main
@@ -180,7 +180,7 @@ git merge --no-ff feature/enhance-ui-metrics -m "merge: Merge branch 'feature/en
     story.append(Spacer(1, 6))
 
     story.append(Paragraph("<b>Step 4: Push to Remote GitHub Repository</b>", styles['H2']))
-    story.append(create_code_block("""git remote add origin https://github.com/Akash2347/Devops-Lab-1.git
+    story.append(create_code_block("""git remote add origin https://github.com/deep1190/Devops-Lab-1.git
 git push -u origin main
 git push -u origin feature/enhance-ui-metrics""", styles))
     story.append(Spacer(1, 8))
@@ -208,7 +208,7 @@ git push -u origin feature/enhance-ui-metrics""", styles))
 def build_q5_pdf():
     story = get_q5_story()
     pdf_path = build_pdf("Q5_Git_Version_Control_Setup.pdf", story)
-    
+
     # Write Markdown version
     md_path = os.path.join(SUBMISSIONS_DIR, "Q5_Git_Version_Control_Setup.md")
     with open(md_path, "w", encoding="utf-8") as f:

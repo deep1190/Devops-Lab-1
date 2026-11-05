@@ -2,7 +2,7 @@
 """
 build_q1.py - Generator for Question 1: Record All Commands (5 Marks)
 Course: DevOps Foundations & Continuous Integration (Lab 1)
-Student: Akash (ad1646414@gmail.com)
+Student: Deepika Gupta (deepikagupta1190@gmail.com)
 """
 
 import os
@@ -20,8 +20,8 @@ def get_q1_markdown():
     return """# Question 1: Record All Commands, Configurations, History & Observations
 
 **Course:** DevOps Foundations & Continuous Integration (Lab 1)  
-**Student Name:** Akash  
-**Email:** ad1646414@gmail.com  
+**Student Name:** Deepika Gupta  
+**Email:** deepikagupta1190@gmail.com  
 **Weightage:** 5 Marks  
 **Submission Component:** Chronological Terminal Execution Logs, Git Commit History Graph, Pipeline Configurations, and Empirical Observations  
 
@@ -55,8 +55,8 @@ git --version
 # Output: git version 2.53.0.windows.1 (Ubuntu equivalent: 2.34.1+)
 
 # 5. Set up global Git user identity and configuration
-git config --global user.name "Akash"
-git config --global user.email "ad1646414@gmail.com"
+git config --global user.name "Deepika Gupta"
+git config --global user.email "deepikagupta1190@gmail.com"
 git config --global init.defaultBranch main
 git config --global core.autocrlf input
 git config --global pull.rebase false
@@ -126,7 +126,7 @@ git checkout main
 git merge --no-ff feature/enhance-ui-metrics -m "merge: Merge branch 'feature/enhance-ui-metrics' into main"
 
 # 7. Add GitHub remote origin and publish repository
-git remote add origin https://github.com/Akash2347/Devops-Lab-1.git
+git remote add origin https://github.com/deep1190/Devops-Lab-1.git
 git push -u origin main
 git push -u origin feature/enhance-ui-metrics
 ```
@@ -327,8 +327,8 @@ def get_q1_story():
 sudo apt update && sudo apt install -y git curl wget openjdk-17-jdk
 
 # Configure global Git identity and defaults
-git config --global user.name "Akash"
-git config --global user.email "ad1646414@gmail.com"
+git config --global user.name "Deepika Gupta"
+git config --global user.email "deepikagupta1190@gmail.com"
 git config --global init.defaultBranch main
 git config --list --show-origin""", styles))
     story.append(Spacer(1, 6))
@@ -361,7 +361,7 @@ git commit -m "feat(metrics): add /metrics monitoring endpoint and test coverage
 # Merge back into main with explicit non-fast-forward merge commit
 git checkout main
 git merge --no-ff feature/enhance-ui-metrics -m "merge: Merge branch 'feature/enhance-ui-metrics' into main"
-git remote add origin https://github.com/Akash2347/Devops-Lab-1.git
+git remote add origin https://github.com/deep1190/Devops-Lab-1.git
 git push -u origin main""", styles))
     story.append(Spacer(1, 8))
 

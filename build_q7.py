@@ -2,7 +2,7 @@
 """
 build_q7.py - Generator for Question 7: Create a Jenkinsfile Defining Pipeline Stages (5 Marks)
 Course: DevOps Foundations & Continuous Integration (Lab 1)
-Student: Akash (ad1646414@gmail.com)
+Student: deepika (deepikagupta1190@gmail.com)
 """
 
 import os
@@ -20,8 +20,8 @@ def get_q7_markdown():
     return r"""# Question 7: Defining CI/CD Pipeline Stages with Jenkinsfile
 
 **Course:** DevOps Foundations & Continuous Integration (Lab 1)  
-**Student Name:** Akash  
-**Email:** ad1646414@gmail.com  
+**Student Name:** deepika  
+**Email:** deepikagupta1190@gmail.com  
 **Weightage:** 5 Marks  
 **Submission Component:** Declarative Jenkinsfile, Stage Mechanics (Build, Test, Deploy), Scripted Pipeline Comparison, and Execution Demonstration  
 

@@ -2,7 +2,7 @@
 """
 build_q2.py - Generator for Question 2: Prepare a CI/CD Workflow Report (10 Marks)
 Course: DevOps Foundations & Continuous Integration (Lab 1)
-Student: Akash (ad1646414@gmail.com)
+Student: Deepika Gupta (deepikagupta1190@gmail.com)
 """
 
 import os
@@ -20,8 +20,8 @@ def get_q2_markdown():
     return """# Question 2: Comprehensive CI/CD Pipeline Workflow Report
 
 **Course:** DevOps Foundations & Continuous Integration (Lab 1)  
-**Student Name:** Akash  
-**Email:** ad1646414@gmail.com  
+**Student Name:** Deepika Gupta  
+**Email:** deepikagupta1190@gmail.com  
 **Weightage:** 10 Marks  
 **Submission Component:** Technical Architecture Report, Pipeline Stage Breakdown, Automation Results, and Empirical Observations  
 
@@ -40,7 +40,7 @@ In this experiment, an end-to-end automated pipeline was engineered for a contai
 +-----------------------------------------------------------------------------------+
 |                            1. SOURCE CODE MANAGEMENT (VCS)                        |
 |   Developer Workspace -> git commit -> git push origin main                      |
-|   Repository: https://github.com/Akash2347/Devops-Lab-1                          |
+|   Repository: https://github.com/deep1190/Devops-Lab-1                          |
 +------------------------------------------+----------------------------------------+
                                            |  HTTP POST Webhook Event
                                            v
@@ -206,7 +206,7 @@ def get_q2_story():
     story.append(Paragraph("The system implements a decoupled, event-driven CI/CD architecture:", styles['Body']))
     
     arch_ascii = """+-----------------------------------------------------------------------------+
-| 1. SCM: GitHub Remote (https://github.com/Akash2347/Devops-Lab-1)           |
+| 1. SCM: GitHub Remote (https://github.com/deep1190/Devops-Lab-1)           |
 |    Developer 'git push origin main' -> Triggers GitHub Webhook              |
 +-------------------------------------+---------------------------------------+
                                       | HTTP POST (Payload: commit SHA)

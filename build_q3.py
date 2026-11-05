@@ -2,7 +2,7 @@
 """
 build_q3.py - Generator for Question 3: Automate Application Deployment (5 Marks)
 Course: DevOps Foundations & Continuous Integration (Lab 1)
-Student: Akash (ad1646414@gmail.com)
+Student:  Deepika Gupta (deepikagupta1190@gmail.com)
 """
 
 import os
