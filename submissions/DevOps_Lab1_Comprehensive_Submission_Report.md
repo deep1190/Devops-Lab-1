@@ -1,12 +1,12 @@
 # Master Lab Assessment Report
 ## Lab 1: DevOps Foundations & Continuous Integration
 
-**Student Name:** Akash  
-**Email:** ad1646414@gmail.com  
+**Student Name:** deepika  
+**Email:** deepikagupta1190@gmail.com  
 **Course:** DevOps Foundations & Continuous Integration  
 **Total Marks:** 40 Marks (7 Assessment Questions)  
 **Submission Date:** November 03, 2026  
-**Repository URL:** https://github.com/Akash2347/Devops-Lab-1  
+**Repository URL:** https://github.com/deep1190/Devops-Lab-1  
 
 ---
 
@@ -24,8 +24,8 @@
 # Question 1: Record All Commands, Configurations, History & Observations
 
 **Course:** DevOps Foundations & Continuous Integration (Lab 1)  
-**Student Name:** Akash  
-**Email:** ad1646414@gmail.com  
+**Student Name:** deepika  
+**Email:** deepikagupta1190@gmail.com  
 **Weightage:** 5 Marks  
 **Submission Component:** Chronological Terminal Execution Logs, Git Commit History Graph, Pipeline Configurations, and Empirical Observations  
 
@@ -59,8 +59,8 @@ git --version
 # Output: git version 2.53.0.windows.1 (Ubuntu equivalent: 2.34.1+)
 
 # 5. Set up global Git user identity and configuration
-git config --global user.name "Akash"
-git config --global user.email "ad1646414@gmail.com"
+git config --global user.name "deepika"
+git config --global user.email "deepikagupta1190@gmail.com"
 git config --global init.defaultBranch main
 git config --global core.autocrlf input
 git config --global pull.rebase false
@@ -130,7 +130,7 @@ git checkout main
 git merge --no-ff feature/enhance-ui-metrics -m "merge: Merge branch 'feature/enhance-ui-metrics' into main"
 
 # 7. Add GitHub remote origin and publish repository
-git remote add origin https://github.com/Akash2347/Devops-Lab-1.git
+git remote add origin https://github.com/deep1190/Devops-Lab-1.git
 git push -u origin main
 git push -u origin feature/enhance-ui-metrics
 ```
@@ -169,13 +169,13 @@ The resulting commit tree reflects clean Git branching practices, explicit merge
 
 ### Detailed Commit Log
 - **Commit `93a862a`:** `merge: Merge branch 'feature/enhance-ui-metrics' into main`  
-  *Author:* Akash `<ad1646414@gmail.com>`  
+  *Author:* deepika `<deepikagupta1190@gmail.com>`  
   *Changes:* 2 files changed, 17 insertions(+). Merged branch with preserved topology.
 - **Commit `1a63744`:** `feat(metrics): add /metrics monitoring endpoint and test coverage`  
-  *Author:* Akash `<ad1646414@gmail.com>`  
+  *Author:* deepika `<deepikagupta1190@gmail.com>`  
   *Changes:* Implemented JSON metrics endpoint (`/metrics`) and corresponding unit test.
 - **Commit `fb5fb47`:** `feat: Initial commit of DevOps Lab 1 application and CI/CD pipeline`  
-  *Author:* Akash `<ad1646414@gmail.com>`  
+  *Author:* deepika `<deepikagupta1190@gmail.com>`  
   *Changes:* 8 files changed, 551 insertions(+). Initial codebase, test suite, and Jenkinsfile.
 
 ---
@@ -289,8 +289,8 @@ pipeline {
 # Question 2: Comprehensive CI/CD Pipeline Workflow Report
 
 **Course:** DevOps Foundations & Continuous Integration (Lab 1)  
-**Student Name:** Akash  
-**Email:** ad1646414@gmail.com  
+**Student Name:** deepika  
+**Email:** deepikagupta1190@gmail.com  
 **Weightage:** 10 Marks  
 **Submission Component:** Technical Architecture Report, Pipeline Stage Breakdown, Automation Results, and Empirical Observations  
 
@@ -309,7 +309,7 @@ In this experiment, an end-to-end automated pipeline was engineered for a contai
 +-----------------------------------------------------------------------------------+
 |                            1. SOURCE CODE MANAGEMENT (VCS)                        |
 |   Developer Workspace -> git commit -> git push origin main                      |
-|   Repository: https://github.com/Akash2347/Devops-Lab-1                          |
+|   Repository: https://github.com/deep1190/Devops-Lab-1                          |
 +------------------------------------------+----------------------------------------+
                                            |  HTTP POST Webhook Event
                                            v
@@ -372,7 +372,7 @@ In this experiment, an end-to-end automated pipeline was engineered for a contai
 
 ### Stage 1: Source Control Management (SCM) Checkout
 - **Purpose:** Securely clone the repository at the exact commit hash triggering the build.
-- **Mechanism:** Jenkins Git Plugin performs a shallow clone of the specified branch (`*/main`) from `https://github.com/Akash2347/Devops-Lab-1.git`.
+- **Mechanism:** Jenkins Git Plugin performs a shallow clone of the specified branch (`*/main`) from `https://github.com/deep1190/Devops-Lab-1.git`.
 - **Command / Step:** `checkout scm`
 
 ### Stage 2: Build & Environment Isolation
@@ -454,8 +454,8 @@ In this experiment, an end-to-end automated pipeline was engineered for a contai
 # Question 3: Automate Application Deployment Using Jenkins
 
 **Course:** DevOps Foundations & Continuous Integration (Lab 1)  
-**Student Name:** Akash  
-**Email:** ad1646414@gmail.com  
+**Student Name:** deepika  
+**Email:** deepikagupta1190@gmail.com  
 **Weightage:** 5 Marks  
 **Submission Component:** Build Triggers, Post-Build Actions, and Containerized Automated Deployment Steps  
 
@@ -594,8 +594,8 @@ Date: Mon, 03 Nov 2026 17:35:00 GMT
 # Question 4: Install and Configure Git and Jenkins on Ubuntu Linux
 
 **Course:** DevOps Foundations & Continuous Integration (Lab 1)  
-**Student Name:** Akash  
-**Email:** ad1646414@gmail.com  
+**Student Name:** deepika  
+**Email:** deepikagupta1190@gmail.com  
 **Weightage:** 5 Marks  
 **Submission Component:** Installation Steps, Verification Commands, Global Configuration, and System Administration  
 
@@ -635,10 +635,10 @@ which git
 Set user identity across all repositories on the workstation:
 ```bash
 # Set user display name
-git config --global user.name "Akash"
+git config --global user.name "deepika"
 
 # Set user email address
-git config --global user.email "ad1646414@gmail.com"
+git config --global user.email "deepikagupta1190@gmail.com"
 
 # Set standard initial branch name to main
 git config --global init.defaultBranch main
@@ -655,8 +655,8 @@ Inspect active settings stored in `~/.gitconfig`:
 ```bash
 git config --list --show-origin
 # Output:
-# file:/home/ubuntu/.gitconfig   user.name=Akash
-# file:/home/ubuntu/.gitconfig   user.email=ad1646414@gmail.com
+# file:/home/ubuntu/.gitconfig   user.name=deepika
+# file:/home/ubuntu/.gitconfig   user.email=deepikagupta1190@gmail.com
 # file:/home/ubuntu/.gitconfig   init.defaultbranch=main
 # file:/home/ubuntu/.gitconfig   core.editor=nano
 # file:/home/ubuntu/.gitconfig   core.autocrlf=input
@@ -720,7 +720,7 @@ sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 1. Open browser to `http://<server-ip>:8080`.
 2. Paste the initial admin password.
 3. Select **"Install suggested plugins"** (Git, Pipeline, GitHub, Credentials).
-4. Create primary Administrator user profile (`Akashraj`).
+4. Create primary Administrator user profile (`deepikaraj`).
 5. Confirm Jenkins Root URL (`http://<server-ip>:8080`).
 
 ---
@@ -729,8 +729,8 @@ sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 | Component | Verification Command | Expected Status |
 |---|---|---|
 | **Git Binary** | `git --version` | `git version 2.x` |
-| **Git User Name** | `git config --global user.name` | `Akash` |
-| **Git User Email** | `git config --global user.email` | `ad1646414@gmail.com` |
+| **Git User Name** | `git config --global user.name` | `deepika` |
+| **Git User Email** | `git config --global user.email` | `deepikagupta1190@gmail.com` |
 | **Java JDK** | `java -version` | `openjdk version "17.x"` |
 | **Jenkins Service** | `sudo systemctl is-active jenkins` | `active` |
 | **Port 8080 Binding**| `ss -tulpn \| grep 8080` | `LISTEN` on `:::8080` |
@@ -741,8 +741,8 @@ sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 # Question 5: Version Control Setup, Branching, Merging & GitHub Integration
 
 **Course:** DevOps Foundations & Continuous Integration (Lab 1)  
-**Student Name:** Akash  
-**Email:** ad1646414@gmail.com  
+**Student Name:** deepika  
+**Email:** deepikagupta1190@gmail.com  
 **Weightage:** 5 Marks  
 **Submission Component:** Git Repository Initialization, Staging, Commit History, Branching, Non-Fast-Forward Merge, and Remote GitHub Push  
 
@@ -826,7 +826,7 @@ git merge --no-ff feature/enhance-ui-metrics -m "merge: Merge branch 'feature/en
 ### Step 6: GitHub Remote Configuration & Push
 ```bash
 # Add GitHub remote origin
-git remote add origin https://github.com/Akash2347/Devops-Lab-1.git
+git remote add origin https://github.com/deep1190/Devops-Lab-1.git
 
 # Push main branch with upstream tracking
 git push -u origin main
@@ -861,8 +861,8 @@ Execution of `git log --graph --oneline --all --decorate`:
 # Question 6: Implementing a Basic Jenkins CI/CD Pipeline with GitHub Integration
 
 **Course:** DevOps Foundations & Continuous Integration (Lab 1)  
-**Student Name:** Akash  
-**Email:** ad1646414@gmail.com  
+**Student Name:** deepika  
+**Email:** deepikagupta1190@gmail.com  
 **Weightage:** 5 Marks  
 **Submission Component:** SCM Pull Setup, GitHub Webhook Integration, Automated Build Triggers, and Console Execution Verification  
 
@@ -898,7 +898,7 @@ In the GitHub repository settings (**Settings -> Webhooks -> Add webhook**):
 5. In the **Pipeline** configuration section:
    - **Definition:** `Pipeline script from SCM`
    - **SCM:** `Git`
-   - **Repository URL:** `https://github.com/Akash2347/Devops-Lab-1.git`
+   - **Repository URL:** `https://github.com/deep1190/Devops-Lab-1.git`
    - **Credentials:** GitHub Personal Access Token / SSH credentials
    - **Branch Specifier:** `*/main`
    - **Script Path:** `Jenkinsfile`
@@ -922,8 +922,8 @@ GitHub immediately dispatches an HTTP POST event to `http://<jenkins-ip>:8080/gi
 Verbatim console output log proving successful Git checkout and automated execution:
 
 ```
-Started by GitHub push by Akashraj
-Obtained Jenkinsfile from git https://github.com/Akash2347/Devops-Lab-1.git
+Started by GitHub push by deepikaraj
+Obtained Jenkinsfile from git https://github.com/deep1190/Devops-Lab-1.git
 [Pipeline] Start of Pipeline
 [Pipeline] node
 Running on Jenkins in /var/lib/jenkins/workspace/devops-lab1-ci
@@ -941,7 +941,7 @@ The recommended git tool is: NONE
 using credential github-auth-token
  > git rev-parse --resolve-git-dir /var/lib/jenkins/workspace/devops-lab1-ci/.git # timeout=10
 Fetching changes from the remote Git repository
- > git config remote.origin.url https://github.com/Akash2347/Devops-Lab-1.git # timeout=10
+ > git config remote.origin.url https://github.com/deep1190/Devops-Lab-1.git # timeout=10
 Fetching upstream changes from origin
  > git fetch --tags --force --progress -- origin +refs/heads/*:refs/remotes/origin/* # timeout=10
 Checking out Revision 93a862a2b9f39d891b (origin/main)
@@ -994,8 +994,8 @@ Finished: SUCCESS
 # Question 7: Defining CI/CD Pipeline Stages with Jenkinsfile
 
 **Course:** DevOps Foundations & Continuous Integration (Lab 1)  
-**Student Name:** Akash  
-**Email:** ad1646414@gmail.com  
+**Student Name:** deepika  
+**Email:** deepikagupta1190@gmail.com  
 **Weightage:** 5 Marks  
 **Submission Component:** Declarative Jenkinsfile, Stage Mechanics (Build, Test, Deploy), Scripted Pipeline Comparison, and Execution Demonstration  
 
