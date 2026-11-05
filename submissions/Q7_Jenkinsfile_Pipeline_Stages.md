@@ -1,8 +1,8 @@
 # Question 7: Defining CI/CD Pipeline Stages with Jenkinsfile
 
 **Course:** DevOps Foundations & Continuous Integration (Lab 1)  
-**Student Name:** Akash  
-**Email:** ad1646414@gmail.com  
+**Student Name:** deepika  
+**Email:** deepikaguppta1190@gmail.com  
 **Weightage:** 5 Marks  
 **Submission Component:** Declarative Jenkinsfile, Stage Mechanics (Build, Test, Deploy), Scripted Pipeline Comparison, and Execution Demonstration  
 

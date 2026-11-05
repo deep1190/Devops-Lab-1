@@ -1,8 +1,8 @@
 # Question 5: Version Control Setup, Branching, Merging & GitHub Integration
 
 **Course:** DevOps Foundations & Continuous Integration (Lab 1)  
-**Student Name:** Akash  
-**Email:** ad1646414@gmail.com  
+**Student Name:** deepika  
+**Email:** deepikaguppta1190@gmail.com  
 **Weightage:** 5 Marks  
 **Submission Component:** Git Repository Initialization, Staging, Commit History, Branching, Non-Fast-Forward Merge, and Remote GitHub Push  
 
@@ -86,7 +86,7 @@ git merge --no-ff feature/enhance-ui-metrics -m "merge: Merge branch 'feature/en
 ### Step 6: GitHub Remote Configuration & Push
 ```bash
 # Add GitHub remote origin
-git remote add origin https://github.com/Akash2347/Devops-Lab-1.git
+git remote add origin https://github.com/deep1190/Devops-Lab-1.git
 
 # Push main branch with upstream tracking
 git push -u origin main

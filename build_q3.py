@@ -20,8 +20,8 @@ def get_q3_markdown():
     return """# Question 3: Automate Application Deployment Using Jenkins
 
 **Course:** DevOps Foundations & Continuous Integration (Lab 1)  
-**Student Name:** Akash  
-**Email:** ad1646414@gmail.com  
+**Student Name:** Deepika Gupta  
+**Email:** deepikagupta1190@gmail.com  
 **Weightage:** 5 Marks  
 **Submission Component:** Build Triggers, Post-Build Actions, and Containerized Automated Deployment Steps  
 

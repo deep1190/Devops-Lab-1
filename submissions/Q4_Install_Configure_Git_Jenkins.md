@@ -1,8 +1,8 @@
 # Question 4: Install and Configure Git and Jenkins on Ubuntu Linux
 
 **Course:** DevOps Foundations & Continuous Integration (Lab 1)  
-**Student Name:** Akash  
-**Email:** ad1646414@gmail.com  
+**Student Name:** deepika  
+**Email:** deepikaguppta1190@gmail.com  
 **Weightage:** 5 Marks  
 **Submission Component:** Installation Steps, Verification Commands, Global Configuration, and System Administration  
 
@@ -42,10 +42,10 @@ which git
 Set user identity across all repositories on the workstation:
 ```bash
 # Set user display name
-git config --global user.name "Akash"
+git config --global user.name "deepika"
 
 # Set user email address
-git config --global user.email "ad1646414@gmail.com"
+git config --global user.email "deepikaguppta1190@gmail.com"
 
 # Set standard initial branch name to main
 git config --global init.defaultBranch main
@@ -62,8 +62,8 @@ Inspect active settings stored in `~/.gitconfig`:
 ```bash
 git config --list --show-origin
 # Output:
-# file:/home/ubuntu/.gitconfig   user.name=Akash
-# file:/home/ubuntu/.gitconfig   user.email=ad1646414@gmail.com
+# file:/home/ubuntu/.gitconfig   user.name=deepika
+# file:/home/ubuntu/.gitconfig   user.email=deepikaguppta1190@gmail.com
 # file:/home/ubuntu/.gitconfig   init.defaultbranch=main
 # file:/home/ubuntu/.gitconfig   core.editor=nano
 # file:/home/ubuntu/.gitconfig   core.autocrlf=input
@@ -127,7 +127,7 @@ sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 1. Open browser to `http://<server-ip>:8080`.
 2. Paste the initial admin password.
 3. Select **"Install suggested plugins"** (Git, Pipeline, GitHub, Credentials).
-4. Create primary Administrator user profile (`Akashraj`).
+4. Create primary Administrator user profile (`deepika`).
 5. Confirm Jenkins Root URL (`http://<server-ip>:8080`).
 
 ---
@@ -136,8 +136,8 @@ sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 | Component | Verification Command | Expected Status |
 |---|---|---|
 | **Git Binary** | `git --version` | `git version 2.x` |
-| **Git User Name** | `git config --global user.name` | `Akash` |
-| **Git User Email** | `git config --global user.email` | `ad1646414@gmail.com` |
+| **Git User Name** | `git config --global user.name` | `deepika` |
+| **Git User Email** | `git config --global user.email` | `deepikaguppta1190@gmail.com` |
 | **Java JDK** | `java -version` | `openjdk version "17.x"` |
 | **Jenkins Service** | `sudo systemctl is-active jenkins` | `active` |
 | **Port 8080 Binding**| `ss -tulpn \| grep 8080` | `LISTEN` on `:::8080` |

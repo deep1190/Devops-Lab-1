@@ -1,8 +1,8 @@
 # Question 2: Comprehensive CI/CD Pipeline Workflow Report
 
 **Course:** DevOps Foundations & Continuous Integration (Lab 1)  
-**Student Name:** Akash  
-**Email:** ad1646414@gmail.com  
+**Student Name:** deepika  
+**Email:** deepikaguppta1190@gmail.com  
 **Weightage:** 10 Marks  
 **Submission Component:** Technical Architecture Report, Pipeline Stage Breakdown, Automation Results, and Empirical Observations  
 
@@ -21,7 +21,7 @@ In this experiment, an end-to-end automated pipeline was engineered for a contai
 +-----------------------------------------------------------------------------------+
 |                            1. SOURCE CODE MANAGEMENT (VCS)                        |
 |   Developer Workspace -> git commit -> git push origin main                      |
-|   Repository: https://github.com/Akash2347/Devops-Lab-1                          |
+|   Repository: https://github.com/deep1190/Devops-Lab-1                          |
 +------------------------------------------+----------------------------------------+
                                            |  HTTP POST Webhook Event
                                            v
@@ -84,7 +84,7 @@ In this experiment, an end-to-end automated pipeline was engineered for a contai
 
 ### Stage 1: Source Control Management (SCM) Checkout
 - **Purpose:** Securely clone the repository at the exact commit hash triggering the build.
-- **Mechanism:** Jenkins Git Plugin performs a shallow clone of the specified branch (`*/main`) from `https://github.com/Akash2347/Devops-Lab-1.git`.
+- **Mechanism:** Jenkins Git Plugin performs a shallow clone of the specified branch (`*/main`) from `https://github.com/deep1190/Devops-Lab-1.git`.
 - **Command / Step:** `checkout scm`
 
 ### Stage 2: Build & Environment Isolation
